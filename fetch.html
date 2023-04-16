@@ -33,6 +33,11 @@
       <button onclick="putRequest()" class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
         Put (Fetch)
       </button>
+
+      <br/>
+      <button onclick="patchRequest()" class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+        Patch (Fetch)
+      </button>
       <br/>
       <button onclick="deleteRequest()" class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
         Delete (Fetch)
@@ -72,8 +77,12 @@
       </button>
       <hr>
       <form action="#" id="form" method="POST">
-        <label for="pname">Name:
+        <label for="name">Name:
           <input type="text" name="name" id="name" >
+        </label>
+        <br/>
+        <label for="email">Email:
+          <input type="text" name="email" id="email" >
         </label>
       </form>
       <button id="submit-button" class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">Submit</button>
